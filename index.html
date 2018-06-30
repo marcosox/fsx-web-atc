@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FSX Web ATC</title>
+    <link rel="icon" href="img/favicon.ico"/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/openlayers/4.6.5/ol-debug.css" type="text/css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" type="text/css">
+    <link rel="stylesheet" href="https://rawgit.com/walkermatt/ol-layerswitcher/master/src/ol-layerswitcher.css"
+          type="text/css">
+    <link rel="stylesheet" href="css/index.css" type="text/css">
+
+</head>
+<body onload="initMap()">
+<div id="map-container">
+    <div id="google-map"></div>
+    <div id="ol-map"></div>
+</div>
+<div id="tooltip"></div>
+<div id="popup"></div>
+<div id="status">Welcome to FSX Web ATC - please allow a few seconds for server connection</div>
+<div id="fsx-controls"></div>
+
+<div id="configDialog" title="Configuration"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/openlayers/4.6.5/ol-debug.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://rawgit.com/walkermatt/ol-layerswitcher/master/dist/ol-layerswitcher.js"></script>
+
+<script src="js/config.js"></script>
+<script src="js/map.js"></script>
+<script src="js/aircrafts.js"></script>
+<script src="js/vehicles.js"></script>
+<script src="js/boats.js"></script>
+<script src="js/facilities.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    background-color: black;
+    color: chartreuse;
+
+    height: 100%;
+    width: 100%;
+}
+
+#map-container {
+    height: 100%;
+    width: 100%;
+}
+
+#ol-map {
+    height: 95vh;
+    width: 100%;
+}
+
+.ol-mouse-position {
+    position: absolute;
+    bottom: auto;
+    right: 1em;
+    top: 1em;
+    left: auto;
+    background-color: rgba(0, 0, 0, 0.6);
+    font-family: Arial, serif;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.ol-overviewmap {
+    top: auto;
+    right: auto;
+    left: .5em;
+    bottom: 3em;
+}
+
+#config-tabs td {
+    text-align: center;
+}
+
+#config-tabs tr td:first-child {
+    text-align: start;
+}
+
+.ol-zoomslider {
+    top: 7em;
+}
+
+.ol-scale-line {
+    top: auto;
+    right: auto;
+    left: 8em;
+    bottom: .5em;
+}
+
+.layer-switcher {
+    right: 0;
+    left: auto;
+    font-size: 14px;
+    padding: 0;
+    top: 2.5em;
+    background-color: black;
+}
+
+.layer-switcher .panel {
+    background-color: #303030;
+}
+
+.open-config-button {
+    bottom: 0;
+    left: 0;
+}
+
+.open-config-button button {
+    width: 7ch;
+}
+
+#configDialog {
+    display: none;
+}
+
+#flightPathlength {
+    width: 2em;
+}

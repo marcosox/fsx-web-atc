@@ -1,0 +1,144 @@
+<div id="config-tabs">
+    <ul>
+        <li><a href="#tabs-1-general">General</a></li>
+        <li><a href="#tabs-2-appearance">Appearance</a></li>
+        <li><a href="#tabs-3-about">About</a></li>
+    </ul>
+    <div id="tabs-1-general">
+        <fieldset>
+            <legend><b>fsx-saas server</b></legend>
+            <label for="backendAddress">Address: </label><input type="text" id="backendAddress">
+            <br>
+            <input type="button" value="Stop requests" id="stopLoop" onclick="stopLoop()">
+            <input type="button" value="Start requests" id="startLoop" onclick="startLoop()">
+            <input type="button" value="Single Refresh" id="refresh" onclick="refreshView()">
+            <br>
+        </fieldset>
+        <fieldset>
+            <legend><b>Speed</b></legend>
+            <label for="ground-speed-display">Speed on ground: </label>
+            <select name="ground-speed-display" id="ground-speed-display">
+                <option value="airspeed">Airspeed</option>
+                <option value="groundspeed">Ground speed</option>
+            </select>
+            <br>
+            <label for="air-speed-display">Speed in air: </label>
+            <select name="air-speed-display" id="air-speed-display">
+                <option value="airspeed">Airspeed</option>
+                <option value="groundspeed">Ground speed</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend><b>View</b></legend>
+            <input type="checkbox" id="followUserAircraft"><label for="followUserAircraft">Follow user aircraft</label>
+        </fieldset>
+    </div>
+    <div id="tabs-2-appearance">
+        <label for="aircraft-label-type-selector">Aircraft labels: </label>
+        <select name="aircraft-label-type-selector" id="aircraft-label-type-selector">
+            <option value="complete">Complete - Flight number, flight plan, alt & speed</option>
+            <option value="short">Short - Flight number only</option>
+            <option value="none">None</option>
+        </select>
+        <br>
+        <fieldset>
+            <legend><b>Other labels</b></legend>
+            <input type="checkbox" name="showBoatLabels" id="showBoatLabels">
+            <label for="showBoatLabels">Boats</label>
+            <input type="checkbox" name="showVehicleLabels" id="showVehicleLabels">
+            <label for="showVehicleLabels">Ground vehicles</label>
+        </fieldset>
+
+        <fieldset>
+            <legend><b>Tracks</b></legend>
+            <label for="flightPathlength">Aircrafts max length:</label>
+            <input id="flightPathlength"> points
+        </fieldset>
+        <fieldset>
+            <legend><b>Colors</b></legend>
+            <div>
+                <table style="float: left;">
+                    <tr>
+                        <th>
+                        <th>icon
+                        <th>label
+                    </tr>
+                    <tr>
+                        <td><label for="userAircraftColor">User aircraft</label></td>
+                        <td><input type="color" id="userAircraftColor" value="#ff0000"></td>
+                        <td><input type="color" id="userAircraftLabelColor" value="#ff0000"></td>
+
+                    </tr>
+                    <tr>
+                        <td><label for="aircraftColor">Aircrafts</label></td>
+                        <td><input type="color" id="aircraftColor" value="#ff0000"></td>
+                        <td><input type="color" id="aircraftLabelColor" value="#ff0000"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="boatColor">Boats</label></td>
+                        <td><input type="color" id="boatColor" value="#ff0000"></td>
+                        <td><input type="color" id="boatLabelColor" value="#ff0000"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="vehicleColor">Vehicles</label></td>
+                        <td><input type="color" id="vehicleColor" value="#ff0000"></td>
+                        <td><input type="color" id="vehicleLabelColor" value="#ff0000"></td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <th>
+                        <th>icon
+                        <th>label
+                    </tr>
+                    <tr>
+                        <td><label for="flightPathColor">Flight path:</label></td>
+                        <td><input type="color" id="flightPathColor" value="#ff0000"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="AirportsColor">Airports:</label></td>
+                        <td><input type="color" id="AirportsColor" value="#ff0000"></td>
+                        <td><input type="color" id="AirportLabelColor" value="#ff0000"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="VORColor">VOR:</label></td>
+                        <td><input type="color" id="VORColor" value="#ff0000"></td>
+                        <td><input type="color" id="VORLabelColor" value="#ff0000"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="NDBColor">NDB:</label></td>
+                        <td><input type="color" id="NDBColor" value="#ff0000"></td>
+                        <td><input type="color" id="NDBLabelColor" value="#ff0000"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="WaypointsColor">Waypoints:</label></td>
+                        <td><input type="color" id="WaypointsColor" value="#ff0000"></td>
+                        <td><input type="color" id="WaypointsLabelColor" value="#ff0000"></td>
+                    </tr>
+                </table>
+            </div>
+        </fieldset>
+    </div>
+    <div id="tabs-3-about">
+        <h4>fsx-web-atc</h4>
+        Written by <a href="https://github.com/marcosox">marcosox</a>
+        Using:
+        <br>
+        <ul>
+            <li><a href="https://jqueryui.com">
+                <img height=32
+                     src="http://logonoid.com/images/thumbs/jquery-ui-logo.gif"
+                     alt="JQuery UI">JQuery UI</a></li>
+            <li><a href="https://openlayers.org">
+                <img height=32
+                     src="https://openlayers.org/assets/theme/img/logo70.png"
+                     alt="Openlayers">Openlayers</a></li>
+            <li><a href="https://github.com/walkermatt/ol-layerswitcher/">
+                <img height=32
+                     src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png"
+                     alt="ol-layerswitcher">ol-layerswitcher</a></li>
+        </ul>
+        <br>
+        <p>This application gets its data from <a href="https://marcosox.github.io/fsx-saas/">fsx-saas.</a></p>
+    </div>
+</div>
