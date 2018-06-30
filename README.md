@@ -1,7 +1,7 @@
 # FSX web ATC #
 
 Interactive web map for FSX. Shows navigation aids, air and ground traffic.
-Data is taken from [fsx-saas](https://github.com/marcosox/fsx-saas), an HTTP server that exposes FSX simconnect data.
+Data is taken from [fsx-saas](https://marcosox.github.io/fsx-saas), an HTTP server that exposes FSX simconnect data.
 
 ![alt text][screenshot-main]
 
