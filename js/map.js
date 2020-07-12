@@ -382,7 +382,7 @@ function initMap() {
     // load configuration dialog
     $("#configDialog").load(
         "config.html",
-        {},
+        undefined,
         function () {
             setupConfigControls();
         }
